@@ -17,7 +17,8 @@
 }
 .team-photo-galery{
     /* max-width: 1224px; */
-    width: 90%;
+    /* width: 90%; */
+    /* margin: 20px; */
     text-align: center;
 }
 .team-greeting{
@@ -29,20 +30,37 @@
 .team-greeting p{
     font-size: 30px;
 }
-.team-mates{
-    text-align: center;
-    display: grid;
-}
+
+
 .team-members{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     margin: 0 100px;
   
    
 }
 .photos img{
-    height: 50vh;
-    margin: 4px;
+    
+    margin: 4px; 
+}
+
+
+.activity-description{
+    max-width: 300px;
+    padding: 15px;
+    background: #EDEDED;
+    overflow-x: hidden;
+    margin-top: 25px;
+    border-radius: 26px;
+}
+.activities-section .head{
+    text-align: center;
+}
+.activities-section .icon-span i{
+    color: #FF9900;
+}
+.activities-section .icon-span span{
+    color: #FF9900;
 }
 
 
@@ -60,8 +78,13 @@
     grid-template-columns: 1fr 1fr;
     margin: 50px 0  50px 100px;
 }
+
+
+
 form{
-  max-width:  60%;
+   
+ 
+
     padding: 60px 25px 5px;
     background:#EDEDED;
     border-radius: 28px;
@@ -79,13 +102,13 @@ form input{
     padding: 10px 40px;
 
 }
-form button{
-    margin-top: 10px;
+form a{
+    
     border: 0;
     padding: 10px 95px;
     border-radius: 26px;
     background-color: #232F3E;
-    cursor: pointer;
+ 
     color: #EDEDED;
     transition: all 400ms ease;
 }
@@ -96,4 +119,148 @@ form:hover{
 form button:hover{
     background-color: whitesmoke;
     color: #232F3E;
+}
+
+
+
+
+
+
+/*============media query for ipad==============*/
+
+
+@media (max-width: 1024px) {
+    
+    .grid-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .grid-section .left-section img{
+        width: 100%;
+        height: auto;
+    }
+    .grid-section .right_section p{
+        font-size: 30px;
+        line-height: 1.4;
+        font-weight: 300;
+    }
+    .team-members{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 90px;
+        gap: 5px;
+        /* align-items: center; */
+        /* gap: 10px; */
+        /* flex-wrap: wrap; */
+        /* margin: auto; */
+    }
+    
+    .activities-section h1{
+        font-size: 60px;
+        font-weight:  600;
+    }
+    .activities-section p{
+        font-size: 30px;
+    }
+ 
+    
+    .activity-description span{
+        font-size: 25px;
+    }
+    .activity-description h3{
+        font-size: 35px;
+    }
+    .club-sponsor h1{
+        font-size: 60px;
+        margin-bottom: 6px;
+    }
+    .club-sponsor p{
+        font-size: 25px;
+    }
+
+ 
+    .club-content{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .club-content  form p{
+        font-size: 30px;
+        font-weight: 600;
+    } 
+    .club-content form input{
+        padding: 30px 120px;
+        color: black;
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+    .club-content a{
+        padding: 20px 90px;
+    }
+}
+
+
+
+
+
+/*===========media query for mobiles==========*/
+@media (max-width: 670px) {
+    .header{
+        font-size: 10px;
+    }
+    .header_contain{
+        margin: 10px 20px;
+    }
+    
+    
+    .grid-section .left-section img{
+        width: 100%;
+    }
+    .grid-section .right_section p{
+        font-size: 20px;
+    }
+    .activities-section h1{
+        font-size: 25px;
+    }
+    .activities-section p{
+        font-size: 15px;
+    }
+    .club-sponsor h1{
+        font-size: 25px;
+    }
+    .club-sponsor p{
+        font-size: 20px;
+    }
+    .team-members{
+       grid-template-columns: 1fr;
+       margin: 0;
+    }
+    .club-content{
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+    }
+    .club-content img{
+        width: 100%;
+    }
+    .club-content form{
+        /* width: 310px; */
+        margin: 0;
+    }
+    .club-content  form p{
+        font-size: 10px;
+        font-weight: 600;
+    } 
+    .club-content form input{
+        padding: 10px;
+        color: black;
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    .club-content a{
+        padding: 10px ;
+    
+    }
 }

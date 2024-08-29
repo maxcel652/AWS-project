@@ -1,0 +1,13 @@
+.countDown{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    background: #ddd;
+    border: 1px solid #999;
+    padding: 10px;
+}
+.info{
+    font-size: 40px;
+}
